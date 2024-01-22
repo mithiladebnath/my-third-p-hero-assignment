@@ -16,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Allerta&family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Sen:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- all font's ends here -->
+    <!-- CDN icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Tailwind custom color -->
     <script>
         tailwind.config = {
@@ -34,16 +36,20 @@
         .menrope-font {
             font-family: 'Manrope', sans-serif;
         }
+
+        .span {
+            color: #FF4240d;
+        }
     </style>
     <!-- css style end's here -->
 </head>
 
 <body>
     <!-- header section start from here -->
-    <header>
+    <header class="md:container md:mx-auto">
         <!-- here is my navbar -->
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100" text-base>
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -57,7 +63,7 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
-                            <li><a>Home</a></li>
+                            <li><a><span class="">Home</span></a></li>
                             <li><a>About</a></li>
                             <li><a>Page's</a></li>
                             <li><a>Blog</a></li>
@@ -65,7 +71,8 @@
                         </ul>
                         <!-- list item's end -->
                     </div>
-                    <a class="text-xl btn btn-ghost">Hockey’s</a>
+                    <!-- navbar title -->
+                    <a class="text-4xl btn btn-ghost">Hockey <span>’</span> s</a>
                 </div>
                 <div class="hidden navbar-center lg:flex">
                     <ul class="px-1 menu menu-horizontal">
@@ -76,23 +83,107 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <!-- here is my navber button  -->
+                <!-- here is my navber and icon button  -->
                 <div class="navbar-end">
+                    <p><i class="w-6 h-6 m-3 xl:hidden fa fa-search"></i></p>
                     <a class="text-white btn btn-error">Get Ticket</a>
                 </div>
             </div>
         </nav>
         <!-- navbar ends here  -->
+        <!-- styling slider -->
+        <div class="w-full carousel">
+            <!-- slideer number one -->
+            <div id="slide1" class="relative w-full carousel-item">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
+                    <a href="#slide2" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    <!-- navber text content  -->
+                    <div class="inline-flex flex-col items-start gap-4 p-8 bg-black rounded-2xl">
+                        <h3 class="text-2xl text-white">
+                            Meet all the heroes from the field
+                        </h3>
+                        <p
+                            class="w-[502px] text-[rgba(255,255,255,0.60)] text-base not-italic font-medium leading-[26px]">
+                            Wayne Gretzky,Mario Lemieux,Bobby Orr,Sidney Crosby,Alexander Ovechkin,Connor
+                            McDavid,Jaromir Jagr,Gordie Howe,Patrick Kane.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- slider number two  -->
+            <div id="slide2" class="relative w-full carousel-item">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="bg-black btn btn-circle "><img src="icons/Frame (3).svg" alt=""></a>
+                    <a href="#slide3" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    <!-- navber text content  -->
+                    <div class="inline-flex flex-col items-start gap-4 p-8 bg-black rounded-2xl">
+                        <h3 class="text-2xl text-white">
+                            Meet all the heroes from the field
+                        </h3>
+                        <p
+                            class="w-[502px] text-[rgba(255,255,255,0.60)] text-base not-italic font-medium leading-[26px]">
+                            Wayne Gretzky,Mario Lemieux,Bobby Orr,Sidney Crosby,Alexander Ovechkin,Connor
+                            McDavid,Jaromir Jagr,Gordie Howe,Patrick Kane.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- slider number three -->
+            <div id="slide3" class="relative w-full carousel-item">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
+                    <a href="#slide4" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+
+                    <!-- navber text content  -->
+                    <div class="inline-flex flex-col items-start gap-4 p-8 bg-black rounded-2xl">
+                        <h3 class="text-2xl text-white">
+                            Meet all the heroes from the field
+                        </h3>
+                        <p
+                            class="w-[502px] text-[rgba(255,255,255,0.60)] text-base not-italic font-medium leading-[26px]">
+                            Wayne Gretzky,Mario Lemieux,Bobby Orr,Sidney Crosby,Alexander Ovechkin,Connor
+                            McDavid,Jaromir Jagr,Gordie Howe,Patrick Kane.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--  slider number four -->
+            <div id="slide4" class="relative w-full carousel-item">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 mt-40px left-5 right-5 top-1/2">
+                    <a href="#slide3" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
+                    <a href="#slide1" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    <!-- navber text content  -->
+                    <div class="inline-flex flex-col items-start gap-4 p-8 bg-black rounded-2xl">
+                        <h3 class="text-2xl text-white">
+                            Meet all the heroes from the field
+                        </h3>
+                        <p
+                            class="w-[502px] text-[rgba(255,255,255,0.60)] text-base not-italic font-medium leading-[26px]">
+                            Wayne Gretzky,Mario Lemieux,Bobby Orr,Sidney Crosby,Alexander Ovechkin,Connor
+                            McDavid,Jaromir Jagr,Gordie Howe,Patrick Kane.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider ends here  -->
+
 
     </header>
     <!-- header section ends here  -->
     <!-- main section start from here  -->
-    <main>
+    <main class="md:container md:mx-auto">
 
     </main>
     <!-- main section ends here  -->
     <!-- footer section starts from here -->
-    <footer>
+    <footer class="md:container md:mx-auto">
 
     </footer>
     <!-- footer section ends here  -->
