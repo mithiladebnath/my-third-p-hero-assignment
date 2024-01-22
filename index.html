@@ -46,7 +46,7 @@
 
 <body>
     <!-- header section start from here -->
-    <header class="md:container md:mx-auto">
+    <header class="sm:container sm:mx-auto">
         <!-- here is my navbar -->
         <nav>
             <div class="navbar bg-base-100" text-base>
@@ -72,11 +72,13 @@
                         <!-- list item's end -->
                     </div>
                     <!-- navbar title -->
-                    <a class="text-4xl btn btn-ghost">Hockey <span>’</span> s</a>
+                    <h1 class="text-[#131318] text-2xl lg:text-4xl font-extrabold">
+                        Hockey<span class="text-[#FF4240]">’</span>s
+                    </h1>
                 </div>
                 <div class="hidden navbar-center lg:flex">
                     <ul class="px-1 menu menu-horizontal">
-                        <li><a>Home</a></li>
+                        <li><a><span class="text-orange-600">Home</span></a></li>
                         <li><a>About</a></li>
                         <li><a>Page's</a></li>
                         <li><a>Blog</a></li>
@@ -84,24 +86,31 @@
                     </ul>
                 </div>
                 <!-- here is my navber and icon button  -->
-                <div class="navbar-end">
-                    <p><i class="w-6 h-6 m-3 xl:hidden fa fa-search"></i></p>
-                    <a class="text-white btn btn-error">Get Ticket</a>
+                <div class="gap-6 navbar-end">
+                    <i class="hidden fa-solid fa-magnifying-glass lg:flex"></i>
+                    <a
+                        class="bg-[#FF4240] text-white text-xs lg:text-xl font-bold px-8 lg:px-6 py-2 lg:py-4 rounded-lg">Get
+                        Ticket</a>
                 </div>
             </div>
         </nav>
         <!-- navbar ends here  -->
         <!-- styling slider -->
         <div class="w-full carousel">
-            <!-- slideer number one -->
-            <div id="slide1" class="relative w-full carousel-item">
+            <!-- slider number one ------------------------------------->
+            <div id="slide1" class="relative w-full carousel-item ">
+
                 <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
-                    <a href="#slide2" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
-                    <!-- navber text content  -->
-                    <div class="inline-flex flex-col items-start gap-4 p-8 bg-black rounded-2xl">
-                        <h3 class="text-2xl text-white">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                    <!-- here is my icon -------------------------------- -->
+                    <div class="flex-1">
+                        <a href="#slide4" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
+                        <a href="#slide2" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    </div>
+                    <!-- navber text content  ------------------------------->
+                    <div
+                        class="inline-flex flex-col items-start hidden gap-4 p-8 bg-black rounded-2xl lg:gap-10 lg:mt-5 lg:flex md:flex ">
+                        <h3 class="text-white text-1xl lg:text-2xl">
                             Meet all the heroes from the field
                         </h3>
                         <p
@@ -109,17 +118,24 @@
                             Wayne Gretzky,Mario Lemieux,Bobby Orr,Sidney Crosby,Alexander Ovechkin,Connor
                             McDavid,Jaromir Jagr,Gordie Howe,Patrick Kane.
                         </p>
+                        <!-- nevbar text ends here ------------------------ -->
                     </div>
                 </div>
+
             </div>
             <!-- slider number two  -->
             <div id="slide2" class="relative w-full carousel-item">
+
                 <img src="Images/1.png" class="w-full" />
+
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="bg-black btn btn-circle "><img src="icons/Frame (3).svg" alt=""></a>
-                    <a href="#slide3" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    <!-- here is my icon  -->
+                    <div class="flex-1">
+                        <a href="#slide1" class="bg-black btn btn-circle "><img src="icons/Frame (3).svg" alt=""></a>
+                        <a href="#slide3" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    </div>
                     <!-- navber text content  -->
-                    <div class="inline-flex flex-col items-start gap-4 p-8 bg-black rounded-2xl">
+                    <div class="inline-flex flex-col items-start flex-1 gap-4 p-8 bg-black rounded-2xl">
                         <h3 class="text-2xl text-white">
                             Meet all the heroes from the field
                         </h3>
@@ -136,9 +152,10 @@
             <div id="slide3" class="relative w-full carousel-item">
                 <img src="Images/1.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
-                    <a href="#slide4" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
-
+                    <div class="flex-1">
+                        <a href="#slide2" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
+                        <a href="#slide4" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    </div>
                     <!-- navber text content  -->
                     <div class="inline-flex flex-col items-start gap-4 p-8 bg-black rounded-2xl">
                         <h3 class="text-2xl text-white">
@@ -156,8 +173,10 @@
             <div id="slide4" class="relative w-full carousel-item">
                 <img src="Images/1.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 mt-40px left-5 right-5 top-1/2">
-                    <a href="#slide3" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
-                    <a href="#slide1" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    <div class="flex">
+                        <a href="#slide3" class="bg-black btn btn-circle"><img src="icons/Frame (3).svg" alt=""></a>
+                        <a href="#slide1" class="bg-black btn btn-circle"><img src="icons/Frame (2).svg" alt=""></a>
+                    </div>
                     <!-- navber text content  -->
                     <div class="inline-flex flex-col items-start gap-4 p-8 bg-black rounded-2xl">
                         <h3 class="text-2xl text-white">
@@ -173,17 +192,36 @@
             </div>
         </div>
         <!-- slider ends here  -->
+        <!-- pogress-bar title starts from Here -->
+        <section class="2nd-section">
+            <!-- progressbar-title  -->
+            <div class="mx-auto text-center ">
 
+                <hr border-t-[3px]>
+                <p class="text-gray-400" mt-20>
+                    ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+                </p>
+                <h2 class="@apply text-[#131318] text-center text-4xl p-9 ">
+                    Professional Hockeys Club
+                </h2>
+                <p class=" text-[rgba(19,19,24,0.60)] text-base  font-medium leading-[26px]">
+                    Hockey is a team sport that is played on ice or on a field, depending on the variant of the game.
+                    The two most common forms of hockey are ice hockey and field hockey, each with its own set of rules
+                    and characteristics.
+                </p>
+            </div>
+
+        </section>
 
     </header>
     <!-- header section ends here  -->
     <!-- main section start from here  -->
-    <main class="md:container md:mx-auto">
+    <main class="sm:container sm:mx-auto">
 
     </main>
     <!-- main section ends here  -->
     <!-- footer section starts from here -->
-    <footer class="md:container md:mx-auto">
+    <footer class="sm:container sm:mx-auto">
 
     </footer>
     <!-- footer section ends here  -->
