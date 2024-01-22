@@ -16,14 +16,86 @@
         href="https://fonts.googleapis.com/css2?family=Allerta&family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Sen:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- all font's ends here -->
+    <!-- Tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- All CSS Style Starts From Here -->
     <style>
         .menrope-font {
             font-family: 'Manrope', sans-serif;
         }
     </style>
+    <!-- css style end's here -->
 </head>
 
 <body>
+    <!-- header section start from here -->
+    <header>
+        <!-- here is my navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <!-- list item's  -->
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Page's</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                        <!-- list item's end -->
+                    </div>
+                    <a class="text-xl btn btn-ghost">Hockey’s</a>
+                </div>
+                <div class="hidden navbar-center lg:flex">
+                    <ul class="px-1 menu menu-horizontal">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Page's</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <!-- here is my navber button  -->
+                <div class="navbar-end">
+                    <a class="text-white btn btn-error">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends here  -->
+
+    </header>
+    <!-- header section ends here  -->
+    <!-- main section start from here  -->
+    <main>
+
+    </main>
+    <!-- main section ends here  -->
+    <!-- footer section starts from here -->
+    <footer>
+
+    </footer>
+    <!-- footer section ends here  -->
 
 </body>
 
